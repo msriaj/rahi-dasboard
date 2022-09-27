@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import InfoCard from './components/InfoCard/InfoCard';
+import CoustomerList from './components/CustomerList/CoustomerList';
+import AddCustomer from './components/AddCustomer/AddCustomer';
+import AddTask from './components/AddTask/AddTask';
+import TaskList from './components/TaskList/TaskList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-100 flex">
+      <Sidebar></Sidebar>
+      <div className="w-full p-10">
+        <TaskList />
+        <InfoCard />
+        <AddTask />
+        <CoustomerList />
+        <AddCustomer />
+      </div>
     </div>
   );
 }
