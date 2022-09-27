@@ -1,25 +1,22 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
-import InfoCard from "./components/InfoCard/InfoCard";
-import CoustomerList from "./components/CustomerList/CoustomerList";
-import AddCustomer from "./components/AddCustomer/AddCustomer";
-import AddTask from "./components/AddTask/AddTask";
-import TaskList from "./components/TaskList/TaskList";
-import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
 
 function App() {
-  const [page, setPage] = useState(<InfoCard />);
-  const pageSet = (pageName) => {
-    setPage(pageName);
-  };
   return (
-    <div className="bg-gray-100 flex">
-      <Sidebar pageinfo={pageSet}></Sidebar>
-      <div className="w-full p-10">{page}</div>
-    </div>
+    <BrowserRouter>
+      <div className="bg-gray-100 flex">
+        <Sidebar />
+        <Routes>
+          <Route path="/*" element={<MainLayout />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
 
 // tore allah bacai rakhuk ,tor sahos kom na , tui component re state er vitor voira disos
+// thik ase ni ho
