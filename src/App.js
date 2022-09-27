@@ -8,9 +8,11 @@ function App() {
     <BrowserRouter>
       <div className="bg-gray-100 flex">
         <Sidebar />
-        <Routes>
-          <Route path="/*" element={<MainLayout />} />
-        </Routes>
+        <div className="w-full p-10">
+          <Routes>
+            <Route path="/*" element={<MainLayout />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );

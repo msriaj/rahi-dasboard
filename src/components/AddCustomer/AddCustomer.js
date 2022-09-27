@@ -3,8 +3,10 @@ import React from "react";
 const AddCustomer = () => {
   return (
     <div>
-      <h2 className="mx-3 text-2xl font-bold">Add Customer</h2>
-      <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col m-2 shadow-lg rounded-2xl">
+      <h2 className="ml-4 text-2xl text-slate-500  font-semibold">
+        Add Customer
+      </h2>
+      <div className="bg-white   px-8 pt-6 pb-8 mb-4 flex flex-col m-2 shadow-lg rounded-2xl">
         <div className="-mx-3 md:flex mb-6">
           <div className="md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -17,7 +19,7 @@ const AddCustomer = () => {
               className="appearance-none block w-full bg-grey-lighter text-slate-500 border border-red rounded py-3 px-4 mb-3"
               id="grid-first-name"
               type="text"
-              placeholder="Hero Alom"
+              placeholder="Hero"
             />
           </div>
           <div className="md:w-1/2 px-3">

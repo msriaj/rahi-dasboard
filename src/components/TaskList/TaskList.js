@@ -3,6 +3,9 @@ import React from "react";
 const TaskList = () => {
   return (
     <div className="p-3 mb-5 w-full">
+      <h2 className="ml-2 mb-3 text-2xl text-slate-500  font-semibold">
+        Task List
+      </h2>
       <div className="bg-white py-4 md:py-7 p-5 rounded-xl shadow-lg">
         <div className="sm:flex items-center justify-between">
           <div className="flex items-center">

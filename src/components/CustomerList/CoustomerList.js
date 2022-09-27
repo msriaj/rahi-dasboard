@@ -3,6 +3,9 @@ import React from "react";
 const CoustomerList = () => {
   return (
     <div className="p-3 mb-5 w-full">
+      <h2 className="ml-2 mb-3 text-2xl text-slate-500  font-semibold">
+        Customer List
+      </h2>
       <div className="bg-white py-4 md:py-7 p-5 rounded-xl shadow-lg">
         <div className="sm:flex items-center justify-between">
           <div className="flex items-center">
@@ -36,7 +39,7 @@ const CoustomerList = () => {
                 <td className="">Name</td>
                 <td className="pl-5">Phone</td>
                 <td className="pl-2">Taka Per Min</td>
-                <td className="pl-5"> </td>
+                <td className="pl-5"> Total Min</td>
 
                 <td className="pl-5">Task(Due Task)</td>
                 <td className="pl-4"> Balance </td>
@@ -47,64 +50,40 @@ const CoustomerList = () => {
                 <td className="">
                   <div className="flex items-center pl-5">
                     <p className="text-base font-medium leading-none text-gray-700 mr-2">
-                      Script TitleScript TitleScript{" "}
+                      Oga moga Public
                     </p>
                   </div>
                 </td>
                 <td className="pl-5">
                   <div className="flex items-center">
                     <p className="text-sm leading-none text-gray-600 ml-2">
-                      Customer Name
+                      0177777777
                     </p>
                   </div>
                 </td>
                 <td className="pl-2">
                   <div className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                    >
-                      <path
-                        d="M9.16667 2.5L16.6667 10C17.0911 10.4745 17.0911 11.1922 16.6667 11.6667L11.6667 16.6667C11.1922 17.0911 10.4745 17.0911 10 16.6667L2.5 9.16667V5.83333C2.5 3.99238 3.99238 2.5 5.83333 2.5H9.16667"
-                        stroke="#52525B"
-                        stroke-width="1.25"
-                        stroke-linecap="round"
-                        stroke-linejoin="round" // atkay kn eto
-                      ></path>
-                      <circle
-                        cx="7.50004"
-                        cy="7.49967"
-                        r="1.66667"
-                        stroke="#52525B"
-                        stroke-width="1.25"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></circle>
-                    </svg>
                     <p className="text-sm leading-none text-red-600 ml-2">
-                      Urgent
+                      25 100min 30 sec
                     </p>
                   </div>
                 </td>
                 <td className="pl-5">
                   <div className="flex items-center">
                     <p className="text-sm leading-none text-gray-600 ml-2">
-                      04/07/2022
+                      100min 30 sec
                     </p>
                   </div>
                 </td>
 
                 <td className="pl-5 text-center">
-                  <button className="py-3 text-center px-3 text-sm focus:outline-none leading-none text-green-700 font-bold rounded">
-                    Delivered
+                  <button className="py-3 text-center px-3 text-sm focus:outline-none leading-none   rounded">
+                    100(<span className="text-red-900">5</span>)
                   </button>
                 </td>
                 <td className="pl-4">
                   <button className="focus:ring-2 focus:ring-offset-2 focus:ring-red-300 text-sm leading-none text-gray-600 py-3 px-5 bg-gray-100 rounded hover:bg-gray-200 focus:outline-none">
-                    View
+                    1000 tk
                   </button>
                 </td>
                 <td className="pl-4">
@@ -112,7 +91,7 @@ const CoustomerList = () => {
                     className="focus:ring-2 focus:ring-offset-2 focus:ring-red-300 text-sm leading-none text-white font-bold py-3 px-5 bg-gray-600 rounded hover:bg-gray-700 focus:outline-none"
                     disabled
                   >
-                    Drive Link
+                    View
                   </button>
                 </td>
               </tr>
