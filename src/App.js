@@ -21,3 +21,5 @@ function App() {
 }
 
 export default App;
+
+// tore allah bacai rakhuk ,tor sahos kom na , tui component re state er vitor voira disos

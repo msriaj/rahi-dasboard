@@ -72,7 +72,7 @@ const CoustomerList = () => {
                         stroke="#52525B"
                         stroke-width="1.25"
                         stroke-linecap="round"
-                        stroke-linejoin="round"
+                        stroke-linejoin="round" // atkay kn eto
                       ></path>
                       <circle
                         cx="7.50004"
